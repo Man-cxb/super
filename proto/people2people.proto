@@ -1,0 +1,21 @@
+// 人与人之间的协议
+
+// 人物外表
+message outward {
+    required int32 hairstyle    = 1; // 发型
+    required int32 face         = 2; // 脸型
+    required int32 clothing     = 3; // 着装(衣服/裤子/鞋子)
+    required int32 jewelry      = 4; // 首饰
+}
+
+// 观察
+message observed {
+    required int32 sex          = 1; // 性别 
+    required int32 age          = 2; // 年龄 
+    repeated outward outwards   = 3; // 人物外表
+    required int32 emoji        = 4; // 表情
+}
+
+// 交流（听，说，文字）
+
+// 互动（肢体语言）
